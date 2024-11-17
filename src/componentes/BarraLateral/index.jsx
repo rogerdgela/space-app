@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ItemNavegacao from "./ItemNavegacao"
 
 const ListaEstilizado = styled.ul`
     list-style: none;
@@ -12,23 +13,43 @@ const BarraLateral = () => {
         <aside>
             <nav>
                 <ListaEstilizado>
-                    <li><a href="">Início</a></li>
-                </ListaEstilizado>
+                    <ItemNavegacao 
+                        iconeAtivo="/icones/home-ativo.png" 
+                        iconeInativo="/icones/home-inativo.png"
+                        ativo={true}
+                    >
+                        Inicio
+                    </ItemNavegacao>
 
-                <ListaEstilizado>
-                    <li><a href="">Mais vistas</a></li>
-                </ListaEstilizado>
+                    <ItemNavegacao 
+                        iconeAtivo="/icones/mais-vistas-ativo.png" 
+                        iconeInativo="/icones/mais-vistas-inativo.png"
+                    >
+                        Mais vistos
+                    </ItemNavegacao>
 
-                <ListaEstilizado>
-                    <li><a href="">Mais curtidas</a></li>
-                </ListaEstilizado>
+                    <ItemNavegacao 
+                        iconeAtivo="/icones/mais-curtidas-ativo.png" 
+                        iconeInativo="/icones/mais-curtidas-inativo.png"
+                    >
+                        Mais curtidos
+                    </ItemNavegacao>
 
-                <ListaEstilizado>
-                    <li><a href="">Novas</a></li>
-                </ListaEstilizado>
+                    <ItemNavegacao 
+                        iconeAtivo="/icones/novas-ativo.png" 
+                        iconeInativo="/icones/novas-inativo.png"
+                    >
+                        Novos
+                    </ItemNavegacao>
 
-                <ListaEstilizado>
-                    <li><a href="">Surpreenda-me</a></li>
+                    <ItemNavegacao 
+                        iconeAtivo="/icones/surpreenda-me-ativo.png" 
+                        iconeInativo="/icones/surpreenda-me-inativo.png"
+                    >
+                        Surpreenda-me
+                    </ItemNavegacao>
+
+            
                 </ListaEstilizado>
             </nav>
         </aside>
