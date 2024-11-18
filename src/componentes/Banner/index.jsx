@@ -10,7 +10,6 @@ const FigureEstilizada = styled.figure`
     margin: 0;
     border-radius: 20px;
     max-width: 100%;
-    background-size: cover;
 `
 
 const TituloEstilizado = styled.h1`
@@ -22,7 +21,7 @@ const TituloEstilizado = styled.h1`
     padding: 0 64px;
 `
 
-const Banner = ({ texto, $backgroundImage}) => {
+const Banner = ({texto, backgroundImage}) => {
     return (
         <FigureEstilizada $backgroundImage={backgroundImage}>
             <TituloEstilizado>{texto}</TituloEstilizado>
