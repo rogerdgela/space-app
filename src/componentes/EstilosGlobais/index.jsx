@@ -79,6 +79,7 @@ const EstilosGlobais = createGlobalStyle`
     [type="button"],
     [type="reset"],
     [type="submit"] {
+        appearance: button;
         -webkit-appearance: button;
     }
     button::-moz-focus-inner,
@@ -121,6 +122,7 @@ const EstilosGlobais = createGlobalStyle`
         height: auto;
     }
     [type="search"] {
+        appearance: texfiled;
         -webkit-appearance: textfield; 
         outline-offset: -2px; 
     }
