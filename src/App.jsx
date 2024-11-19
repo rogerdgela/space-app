@@ -44,7 +44,7 @@ function App() {
                             backgroundImage={bannerBackground}
                         />
 
-                    <Galeria />
+                        <Galeria />
                     </ConteudoGaleria>
                 </MainContainer>
             </AppContainer>
