@@ -2,7 +2,7 @@ import Titulo from "../../Titulo";
 
 const Populares = () => {
     return (
-        <Titulo $alinhamento="center">Populares</Titulo>
+        <Titulo alinhamento="center">Populares</Titulo>
     )
 }
 
