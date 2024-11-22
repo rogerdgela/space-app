@@ -12,7 +12,7 @@ const Overlay = styled.div`
 `
 
 const DialogEstilizado = styled.dialog`
-    position: fixed;
+    position: absolute;
     top: 294px;
     background: transparent;
     padding: 0;

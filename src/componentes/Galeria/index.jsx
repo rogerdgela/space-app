@@ -28,12 +28,10 @@ const Galeria = ({ fotos = [], aoFotoSelecionada }) => {
                 <SecaoFluida>
                     <Titulo>Navegue pela galeria</Titulo>
                     <ImagensContainer>
-                        {
-                            fotos.map(foto => <Imagem 
-                                aoZoomSolicidado={aoFotoSelecionada} 
-                                key={foto.id} 
-                                foto={foto} 
-                            />)
+                        {fotos.map(foto => <Imagem 
+                            aoZoomSolicitado={aoFotoSelecionada}
+                            key={foto.id} 
+                            foto={foto} />)
                         }
                     </ImagensContainer>
                 </SecaoFluida>
