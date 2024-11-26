@@ -65,8 +65,8 @@ const App = () => {
               backgroundImage={bannerBackground}
             />
             <Galeria 
-              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
-              aoAlternarFavorito={aoAlternarFavorito} 
+              aoFotoSelecionada={foto => setFotoSelecionada(foto)} 
+              aoAlternarFavorito={aoAlternarFavorito}
               fotos={fotosDaGaleria}
             />
           </ConteudoGaleria>

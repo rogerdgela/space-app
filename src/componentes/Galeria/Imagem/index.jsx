@@ -37,9 +37,14 @@ const Rodape = styled.footer`
 `
 
 const Imagem = ({ foto, expandida = false, aoZoomSolicitado, aoAlternarFavorito }) => {
-    
-    const iconeFavorito = foto.favorita ? "/icones/favorito-ativo.png" : "/icones/favorito.png"
-    
+
+    // const iconeFavorito = foto.favorita ? '/icones/favorito-ativo.png' : '/icones/favorito.png'
+    let iconeFavorito = '/icones/favorito.png';
+    if (foto.favorita) {
+        iconeFavorito = '/icones/favorito-ativo.png'
+    }
+
+
     return (<Figure $expandida={expandida} id={`foto-${foto.id}`}>
         <img src={foto.path} alt={foto.alt} />
         <figcaption>
